@@ -1,5 +1,13 @@
 /*------------ media query --------------- */
 @media only screen and (max-width: 768px) {
+    #slider .featured-title span{
+        font-size: 16px;
+    }
+    #slider .featured{
+        vertical-align: top;
+        padding-top: 10px;
+    }
+
     /* -- スケジュール表 -- */
     .schedule-table tr td.column-1{
         padding-right:0.5em;
@@ -20,14 +28,51 @@
         border-color:#990000;
     }
     /* --  アクセス -- */
-    .access-info{
+    .top-page .access .access-info{
         width:100%;
         display:block;
+        padding: 0 4px;
     }
-    #access-map{
+    .top-page .access #access-map{
         width:100%;
         height:180px;
         display:block
+    }
+
+    /*お問い合わせボタン*/
+    a.inquiry-btn{
+        width:100%;
+    }
+
+    /*講師*/
+    div.staff-page div.staff .prof-img{
+        float: none;
+        width: 200px;
+        margin: 0 auto;
+    }
+    div.staff-page div.staff .prof-img img{
+        width: 100%;
+        border-radius: 100px;
+    }
+
+    div.staff-page div.staff .desc-wrapper{
+        float: none;
+        width: 100%;
+        margin-left: 0px;
+    }
+
+    div.staff-page div.staff .desc-wrapper .desc{
+        margin-left: 0px;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+
+
+}
+
+@media only screen and (min-width: 769px) {
+    br.sp-only{
+        display: none;
     }
 }
 

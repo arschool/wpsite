@@ -2901,11 +2901,31 @@ body .fa-lg {
 
 
 /* ---------------------------------------------------------------------------------------
-アルスクール改修
+ArSchool 改修
 --------------------------------------------------------------------------------------- */
+/* -- ページ共通 -- */
 body{
     font-size:16px;
 }
+
+#main-core *{
+    box-sizing: border-box;
+}
+.section{
+    margin-bottom: 72px;
+}
+.section h2{
+    text-align:center;
+}
+
+/* 外部リンク */
+i.blank-icon{
+    font-size: 40%;
+    display: inline-block;
+    vertical-align: text-top;
+    margin-left: 4px;
+}
+
 
 /* --  header -- */
 #header{
@@ -2913,42 +2933,40 @@ body{
 }
 
 #header .menu > li.menu-hover > a, #header .menu > li.current_page_item > a, #header .menu > li.current-menu-ancestor > a, #header .menu > li > a:hover{
-    /* background: #AE1D23; */
     background: #990000;
 
 }
 
 #header .header-links > ul > li a{
-    /* color: #AE1D23; */
     color: #990000;
 }
 
 /* -- footer -- */
 #sub-footer{
-    /* background: #AE1D23; */
     background: #990000;
-    /* border-top-color: #AE1D23; */
     border-top-color: #990000;
 }
 
-/* -- ページ共通 -- */
-h2{
-    text-align:center;
-}
-
-/* --  TOPページ -- */
+/* --  TOPページ(theme部分) -- */
 #introaction h3{
     text-align:center;
 }
 #section-home .entry-header span{
     background: #990000;
 }
+#section-home .entry-content span.read-more{
+    display: block;
+    text-decoration: underline;
+    margin-top: 6px;
+    color: #EC4C4C;
+    text-align: right;
+}
 #section-home .one_third:hover,
 #section-home .one_third:hover h3{
     color: #aaa;
 }
 
-
+/* --  TOPページ(post) -- */
 /* -- スケジュール表 -- */
 .schedule-table{
     max-width: 720px;
@@ -3007,18 +3025,33 @@ h2{
 
 
 /* --  アクセス -- */
-.access-info{
+.top-page .access .access-info{
+    padding: 0 20px;
     width:49%;
     display:inline-block;
     vertical-align:top;
 }
-#access-map{
+.top-page .access .access-info p{
+    margin-bottom: 10px;
+}
+.top-page .access #access-map{
     width:49%;
     height:180px;
     display:inline-block;
 }
 
 
+/* --  ArSchoolの学び -- */
+.what-to-learn-page .section .step{
+    margin-bottom: 48px;
+}
+
+.what-to-learn-page .sub-title{
+    text-align: center;
+    margin-bottom: 24px;
+    color: #555;
+    font-size: 20px;
+}
 
 
 /* --  お問い合わせフォーム -- */
@@ -3113,5 +3146,38 @@ a.inquiry-btn i{
     margin-right: 0.5em;
     vertical-align: text-bottom;
 }
+
+
+/* 講師ページ */
+div.staff-page div.staff{
+    margin-bottom: 48px;
+    overflow: auto;
+}
+
+div.staff-page div.staff h2{
+
+}
+
+div.staff-page div.staff .prof-img{
+    float: left;
+    width: 200px;
+}
+div.staff-page div.staff .prof-img img{
+    width: 100%;
+    border-radius: 100px;
+}
+
+div.staff-page div.staff .desc-wrapper{
+    float: left;
+    width: 100%;
+    margin-left: -200px;
+}
+
+div.staff-page div.staff .desc-wrapper .desc{
+    margin-left: 200px;
+    padding-top: 10px;
+    padding-left: 40px;
+}
+
 
 
