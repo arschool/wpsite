@@ -76,3 +76,19 @@
     }
 }
 
+
+@media only screen and (max-width: 768px){
+    #header {
+        padding-top: 5px;
+        padding-bottom: 0;
+    }
+    #logo{
+        text-align: left;
+    }
+    button#responsive-menu-button{
+        border-radius: 25px;
+    }
+    #responsive-menu-container{
+        border-right: 1px solid #990000;
+    }
+}
