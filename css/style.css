@@ -2941,6 +2941,10 @@ i.blank-icon{
     color: #990000;
 }
 
+#header #menu-all > li:first-child{
+    display: none;
+}
+
 /* -- footer -- */
 #sub-footer{
     background: #990000;
