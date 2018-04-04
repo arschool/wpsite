@@ -167,6 +167,15 @@ i.blank-icon{
 }
 
 
+#slider .featured{
+    vertical-align: bottom;
+    text-align: right;
+}
+
+#slider .rslides_tabs{
+    display: none;
+}
+
 
 
 

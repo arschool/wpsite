@@ -1,0 +1,456 @@
+.trial-page {
+  //width: 90%;
+  margin: 0 auto;
+  .date {
+    margin-bottom: 50px;
+    .date1 {
+      font-size: 18px;
+    }
+    .date2 {
+      font-size: 18px;
+      a{
+        font-size: 20px;
+      }
+    }
+  }
+
+  .title_top {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    .title1 {
+      .title1-1 {
+        margin-bottom: 1px;
+        font-weight: bold;
+        font-size: 31px;
+        .title-target{
+          font-size: 20px;
+          display: block;
+        }
+      }
+    }
+    .title_and {
+      font-size: 36px;
+      padding: 0 10px;
+    }
+    .title2 {
+
+      .title2-1 {
+        color: #555;
+        font-weight: bold;
+        font-size: 20px;
+        .subtitle_2-1 {
+          font-weight: normal;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  .title1-2 {
+    font-size: 18px;
+    text-align: left;
+    margin-top: -6px;
+  }
+  .title2-2 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .top_image {
+    width: 100%;
+  }
+
+  .form {
+    border: 1px solid #990000;
+    display: block;
+    box-sizing: border-box;
+    width: 50%;
+    max-width: 400px;
+    color: #990000;
+    font-size: 120%;
+    background: #ffffcc;
+    /* border: 1px solid #666; */
+    border-radius: 4px;
+    text-align: center;
+    margin: 50px auto;
+    padding: 14px 0px;
+
+  }
+
+  .title_date {
+    text-align: center;
+  }
+
+  .date_place {
+    margin-bottom: 50px;
+    display: flex;
+    .left_map {
+      width: 50%;
+      table {
+        border: solid 0.5px #ddd;
+        tbody {
+          text-align: left;
+          tr {
+            td {
+              .lh {
+                line-height: 20px;
+                margin-bottom: 5px;
+              }
+              &:first-child{
+                white-space: nowrap;
+              }
+            }
+          }
+        }
+      }
+    }
+    .right_map {
+      width: 45%;
+      margin-left: 5%;
+    }
+  }
+
+  .contents {
+    margin-bottom: 60px;
+    .contents_thema1 {
+      margin-bottom: 30px;
+      text-align: center;
+      h3 {
+        text-align: left;
+        font-size: 23px;
+      }
+      .contents_1-1 {
+        margin-bottom: 20px;
+        display: flex;
+        text-align: left;
+
+        .contents_1-1_text {
+          width: 66%;
+          margin-right: 3%;
+
+          .contents_1-1_title {
+            font-size: 20px;
+          }
+          .contents_1-1_detail1 {
+            p.lh{
+              margin-bottom: 15px;
+            }
+          }
+        }
+        .contents_1-1_photo {
+          float: left;
+          width: 30%;
+        }
+      }
+    }
+    .contents_thema2 {
+      width: 100%;
+      overflow: auto;
+      .contents_1-1_detail2 {
+        p.lh {
+          margin-bottom: 15px;
+        }
+      }
+      h3 {
+        font-size: 23px;
+      }
+
+      .contents_2-1_title {
+        .contents_thema2_big {
+          font-size: 21px;
+          font-weight: bold;
+        }
+      }
+      .contents_caption {
+        font-size: 15px;
+      }
+    }
+  }
+
+  .teacher {
+    margin-bottom: 50px;
+    overflow: auto;
+
+    .staff {
+      display: flex;
+      margin-bottom: 30px;
+      .prof-img {
+        width: 200px;
+
+        img {
+          width: 100%;
+          border-radius: 100px;
+        }
+      }
+
+      .desc-wrapper {
+        width: 100%;
+        margin-left: -200px;
+
+        .desc {
+          margin-left: 200px;
+          padding-top: 10px;
+          padding-left: 40px;
+        }
+      }
+    }
+  }
+
+  .remarks {
+    .title {
+      text-align: center;
+
+    }
+    .margin {
+      margin-bottom: 20px;
+      .subtitle {
+        margin-bottom: 0;
+      }
+      .detail {
+      }
+    }
+  }
+  .form_text {
+  }
+  a.form:hover {
+    background-color: #FFB96B;
+  }
+
+  .contact {
+    text-align: center;
+
+    .title {
+    }
+
+    .mail {
+      display: block;
+      box-sizing: border-box;
+      width: 50%;
+      max-width: 400px;
+      color: #FFFFFF;
+      font-size: 120%;
+      background: #990000;
+      /* border: 1px solid #666; */
+      border-radius: 4px;
+      text-align: center;
+      margin: 0 auto;
+      padding: 14px 0px;
+    }
+  }
+}
+
+/*------------ media query --------------- */
+@media only screen and (max-width: 768px) {
+
+  .trial-page {
+    //width: 90%;
+    margin: 0 auto;
+    .date {
+      margin-bottom: 10px;
+      .date1 {
+        font-size: 15px;
+      }
+      .date2 {
+        font-size: 15px;
+        a{
+          font-size: 17px;
+        }
+      }
+    }
+
+    .title_top {
+      display: block;
+      text-align: center;
+      .title1 {
+        .title1-1 {
+          margin-bottom: 1px;
+          font-weight: bold;
+          font-size: 20px;
+          .title-target{
+            font-size: 15px;
+          }
+        }
+      }
+      .title_and {
+        font-size: 20px;
+      }
+      .title2 {
+
+        .title2-1 {
+          color: #555;
+          font-weight: bold;
+          font-size: 18px;
+          .subtitle_2-1 {
+            font-weight: normal;
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .title1-2 {
+      font-size: 13px;
+      text-align: center;
+    }
+    .title2-2 {
+      font-size: 15px;
+      text-align: center;
+    }
+
+    .top_image {
+      width: 100%;
+    }
+
+    .form {
+      width: 90%;
+      font-size: 100%;
+      font-weight: bold;
+      margin: 30px auto;
+      padding: 14px 0px;
+    }
+
+    .title_date {
+      text-align: center;
+    }
+
+    .date_place {
+      flex-direction: column;
+      margin-bottom: 50px;
+      .left_map {
+        width: 100%;
+        table {
+          text-align: left;
+          font-size: 15px;
+        }
+      }
+      .right_map {
+        width: 100%;
+        height:400px;
+        margin: 0;
+      }
+    }
+
+    .contents {
+      margin-bottom: 50px;
+      .contents_thema1 {
+        text-align: center;
+        h3 {
+          font-size: 20px;
+        }
+        .contents_1-1 {
+          width: 100%;
+          text-align: left;
+          flex-direction: column;
+          margin-bottom: 30px;
+          .contents_1-1_text {
+            width: 100%;
+            .contents_1-1_title {
+              width: 100%;
+              font-size: 18px;
+            }
+            .contents_1-1_detail1 {
+              width: 100%;
+              .lh {
+                line-height: 20px;
+                p {
+                  margin-bottom: 15px;
+                }
+              }
+            }
+          }
+          .contents_1-1_photo {
+            width: 100%;
+
+          }
+        }
+      }
+      .contents_thema2 {
+        overflow: auto;
+        h3 {
+          font-size: 23px;
+        }
+        .contents_2-1_title {
+          font-size: 20px;
+          .contents_thema2_big {
+            font-weight: bold;
+          }
+        }
+        .contents_2-1_detail {
+        }
+
+        .contents_caption {
+          font-size: 15px;
+        }
+      }
+    }
+
+    .teacher {
+      margin-bottom: 50px;
+
+      .staff {
+        flex-direction: column;
+
+        .prof-img {
+          width: 200px;
+          margin: 0 auto;
+          img {
+          }
+        }
+
+        .desc-wrapper {
+          margin-left: 0px;
+
+          .desc {
+            margin-left: 0px;
+            padding-top: 0px;
+            padding-left: 0px;
+          }
+        }
+      }
+    }
+
+    .remarks {
+      .title {
+        text-align: center;
+
+      }
+      .margin {
+        margin-bottom: 20px;
+        .subtitle {
+          margin-bottom: 0;
+        }
+        .detail {
+        }
+      }
+    }
+    .form_text {
+    }
+
+    .contact {
+      text-align: center;
+
+      .title {
+      }
+      .mail {
+        width: 90%;
+        font-size: 100%;
+        font-weight: bold;
+        margin: 20px auto;
+        padding: 14px 0px;
+      }
+
+    }
+  }
+
+}
+
+.event-apply-page{
+  .inquiry-form{
+    select{
+      max-width: 100%;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  }
+}
+
