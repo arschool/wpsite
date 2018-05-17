@@ -1,0 +1,26 @@
+#npcatch {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#npcatch li {
+    flex: 0 1 400px;
+}
+
+#npcatch li a.img-wrapper {
+    display:inline-block;
+}
+
+#npcatch img {
+    max-width: 150px;
+    max-height: 150px;
+}
+
+#npcatch .title {
+    display:inline-block;
+}
+
+#npcatch .date {
+}

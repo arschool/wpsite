@@ -12,3 +12,16 @@ gulp.task('sass', function () {
 gulp.task('sass:watch', function () {
   gulp.watch('./sass/*.scss', ['sass']);
 });
+
+
+gulp.task('sass_local', function () {
+	return gulp.src('./sass/*.scss')
+		.pipe(sass().on('error', sass.logError))
+		.pipe(gulp.dest('./css'))
+		.pipe(gulp.dest('/var/vagrant/php55/www/arschool.tech/wordpress/wp-content/themes/engrave-lite'))
+        ;
+});
+
+gulp.task('sass_local:watch', function () {
+	gulp.watch('./sass/*.scss', ['sass_local']);
+});

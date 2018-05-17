@@ -1,0 +1,771 @@
+/* ---------------------------------------------------------------------------------------
+ArSchool 改修
+--------------------------------------------------------------------------------------- */
+@mixin subscribe-area {
+  background: #eee;
+  padding: 20px;
+  h3 {
+    text-align: center;
+    span{
+      display: block;
+      font-size: 90%;
+    }
+  }
+  .subscribe-input {
+    .es_lablebox {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .es_textbox {
+      display: inline-block;
+      margin-right: 14px;
+      input[type="text"],input[type="email"]{
+        padding: 8px 2px;
+      }
+    }
+
+    .es_button {
+      display: inline-block;
+      input[type="submit"]{
+        padding:6px 25px;
+      }
+    }
+  }
+}
+
+
+
+/* -- ページ共通 -- */
+body {
+  font-size: 16px;
+}
+
+#main-core * {
+  box-sizing: border-box;
+}
+
+.section {
+  margin-bottom: 72px;
+}
+
+.section h2 {
+  text-align: center;
+}
+
+/* 外部リンク */
+i.blank-icon {
+  font-size: 40%;
+  display: inline-block;
+  vertical-align: text-top;
+  margin-left: 4px;
+}
+
+/* --  header -- */
+#header {
+  background: #ffffcc;
+}
+
+#header .menu > li.menu-hover > a, #header .menu > li.current_page_item > a, #header .menu > li.current-menu-ancestor > a, #header .menu > li > a:hover {
+  background: #990000;
+
+}
+
+#header .header-links > ul > li a {
+  color: #990000;
+}
+
+#header #menu-all > li:first-child {
+  display: none;
+}
+
+/* -- footer -- */
+#sub-footer {
+  background: #990000;
+  border-top-color: #990000;
+}
+
+/* --  TOPページ(theme部分) -- */
+#introaction h1 {
+  text-align: center;
+
+  text-shadow: 1px 1px 0px #FFF;
+  margin: 0px 10px;
+  font-size: 20px;
+}
+
+#section-home .entry-header span {
+  background: #990000;
+}
+
+#section-home .entry-content span.read-more {
+  display: block;
+  text-decoration: underline;
+  margin-top: 6px;
+  color: #EC4C4C;
+  text-align: right;
+}
+
+#section-home .one_third:hover,
+#section-home .one_third:hover h3 {
+  color: #aaa;
+}
+
+/* --  TOPページ(post) -- */
+.top-page {
+  & > h2 {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  /* -- お知らせエリア -- */
+  .whats-new-area {
+    .npc-tags {
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+          display: inline-block;
+          a {
+            display: inline-block;
+            padding: 3px 10px;
+            margin: 0 3px 3px 0;
+            border: 1px solid #DDD;
+            background: #F6F6F6;
+
+            color: #555;
+            text-shadow: 1px 1px 0px #FFF;
+
+            -webkit-box-shadow: inset 0 0 0 1px #FFF;
+            -moz-box-shadow: inset 0 0 0 1px white;
+            -ms-box-shadow: inset 0 0 0 1px white;
+            -o-box-shadow: inset 0 0 0 1px white;
+            box-shadow: inset 0 0 0 1px #FFF;
+            -webkit-transition: all 0.3s ease-in-out;
+            -moz-transition: all 0.3s ease-in-out;
+            -ms-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+              background: #EC4C4C;
+              border-color: #EC4C4C;
+              -webkit-box-shadow: none;
+              -moz-box-shadow: none;
+              -ms-box-shadow: none;
+              -o-box-shadow: none;
+              box-shadow: none;
+
+              color: white;
+              text-shadow: none;
+
+            }
+            i {
+              padding-right: 10px;
+            }
+          }
+
+        }
+
+      }
+
+    }
+    //ul.item-list{
+    //  list-style: none;
+    //  /*width: 70%;*/
+    //  padding: 0;
+    //  margin: 0 auto;
+    //
+    //  li{
+    //    line-height: 1.3;
+    //    margin: 0 0 8px 20px;
+    //    text-align: center;
+    //
+    //    a{
+    //
+    //    }
+    //
+    //  }
+    //
+    //}
+
+    #npcatch {
+      margin: 0;
+      padding: 0;
+      list-style-type: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      li {
+        flex: 0 0 240px;
+        padding: 0 5px;
+        a.img-wrapper {
+          display: flex;
+          justify-content: center;
+          width: 230px;
+          height: 128px;
+          border: 1px solid #eee;
+          background: #fafafa;
+          margin-bottom: 10px;
+        }
+      }
+
+      img {
+        align-self: center;
+        display: block;
+        /*margin: 0 auto;*/
+        max-width: 230px;
+        max-height: 128px;
+        /*line-height: 200px;*/
+      }
+
+      .title {
+        display: block;
+        line-height: 1.3;
+      }
+
+      .date {
+        display: block;
+        font-size: 90%;
+      }
+    }
+  }
+
+  /* -- 学校ごとの説明エリア -- */
+  .schools {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 18px;
+
+    .school {
+      flex: 0 0 45%;
+      position: relative;
+      border: 1px solid #ccc;
+      margin: 0 10px;
+
+      h3 {
+        position: absolute;
+        text-align: center;
+        padding: 0 12px;
+        background: #FFF;
+        top: -18px;
+        left: 50%;
+        transform: translate(-50%, 0);
+        font-size: 24px;
+
+        .new {
+          vertical-align: top;
+          font-size: 80%;
+          margin-left: 0.5em;
+          color: #EC4C4C;
+        }
+      }
+
+      .school-info {
+        padding: 32px 24px 0px;
+        /*margin: 18px 10px 10px;*/
+      }
+
+      .section {
+        margin-bottom: 32px;
+
+        h4 {
+          margin-bottom: .1em;
+        }
+        .info {
+          padding: 0 20px;
+        }
+
+        p {
+          margin-bottom: 6px;
+          line-height: 1.3;
+        }
+
+        /* --  アクセス -- */
+        .access-map {
+          height: 180px;
+          /*display:inline-block;*/
+        }
+
+      }
+
+    }
+    //.school
+
+    &.schools-event {
+      margin-bottom: 20px;
+
+    }
+  }
+
+  .subscribe-area {
+    @include subscribe-area;
+  }
+
+}
+
+#slider .featured {
+  vertical-align: bottom;
+  text-align: right;
+}
+
+#slider .rslides_tabs {
+  display: none;
+}
+
+/* -- -- -- -- -- -- -- --
+学校紹介ページ ------------
+ -- -- -- -- -- ------------ */
+//.school-page {
+//  /* -- 学校ごとの説明エリア -- */
+//  .school {
+//    h2, h3, .school-info {
+//      text-align: center;
+//    }
+//    margin-bottom: 120px;
+//    h2 {
+//      font-size: 36px;
+//      .new {
+//        vertical-align: top;
+//        font-size: 80%;
+//        margin-left: 0.5em;
+//        color: #EC4C4C;
+//      }
+//    }
+//    .section {
+//      margin-bottom: 32px;
+//      h3 {
+//        margin-bottom: .5em;
+//      }
+//      .info {
+//        padding: 0 20px;
+//      }
+//      p {
+//        margin-bottom: 6px;
+//        line-height: 1.3;
+//      }
+//
+//    }
+//  }
+//
+//  .schedule-table {
+//    max-width: 720px;
+//    margin: 0 auto;
+//
+//    tr {
+//      &:first-child {
+//        border-top: 1px solid #ddd;
+//      }
+//
+//      td {
+//        padding-left: 1.5em;
+//
+//        &.column-1 {
+//          text-align: right;
+//          width: 28%;
+//          padding-right: 2em;
+//          border-right: 1px solid #ddd;
+//
+//          &:last-child {
+//            text-align: left;
+//            padding-right: 0em;
+//            border-right-width: 0px;
+//          }
+//        }
+//
+//      }
+//
+//    }
+//  }
+//
+//  .section.access .access-map {
+//    height: 180px;
+//  }
+//
+//  /* --  アクセス -- */
+//  .access {
+//
+//    .info {
+//      display: flex;
+//      flex-wrap: wrap;
+//      justify-content: center;
+//
+//      & > div {
+//        flex: 0 0 48%;
+//      }
+//
+//      .access-info {
+//        text-align: left;
+//        padding: 0 20px;
+//
+//        p {
+//          margin-bottom: 6px;
+//        }
+//      }
+//
+//      .access-map {
+//        height: 180px;
+//      }
+//    }
+//
+//  }
+//
+//  /* -- 料金表 -- */
+//  .price-table {
+//    max-width: 720px;
+//    margin: 0 auto;
+//
+//    tr {
+//      &:first-child {
+//        border-top: 1px solid #ddd;
+//      }
+//      td {
+//        text-align: right;
+//        padding-left: 1.5em;
+//
+//        &:last-child {
+//          text-align: left;
+//        }
+//
+//        &.column-1 {
+//          text-align: right;
+//          width: 40%;
+//          padding-right: 2em;
+//          border-right: 1px solid #ddd;
+//
+//          &:last-child {
+//            text-align: left;
+//            padding-right: 0em;
+//            border-right-width: 0px;
+//            background: #FFF;
+//          }
+//        }
+//
+//      }
+//    }
+//  }
+//}
+
+
+
+
+
+/* -- -- -- -- -- -- -- --
+コースページ ------------
+ -- -- -- -- -- ------------ */
+.course-page {
+  /* -- 学校ごとの説明エリア -- */
+  .school {
+    h2, h3, .school-info {
+      text-align: center;
+    }
+    margin-bottom: 120px;
+    h2 {
+      font-size: 36px;
+      .new {
+        vertical-align: top;
+        font-size: 80%;
+        margin-left: 0.5em;
+        color: #EC4C4C;
+      }
+    }
+    .section {
+      margin-bottom: 32px;
+      h3 {
+        margin-bottom: .5em;
+      }
+      .info {
+        padding: 0 20px;
+      }
+      p {
+        margin-bottom: 6px;
+        line-height: 1.3;
+      }
+
+    }
+  }
+
+  .schedule-table {
+    max-width: 720px;
+    margin: 0 auto;
+
+    tr {
+      &:first-child {
+        border-top: 1px solid #ddd;
+      }
+
+      td {
+        padding-left: 1.5em;
+
+        &.column-1 {
+          text-align: right;
+          width: 28%;
+          padding-right: 2em;
+          border-right: 1px solid #ddd;
+
+          &:last-child {
+            text-align: left;
+            padding-right: 0em;
+            border-right-width: 0px;
+          }
+        }
+
+      }
+
+    }
+  }
+
+  .section.access .access-map {
+    height: 180px;
+  }
+
+  /* --  アクセス -- */
+  .access {
+
+    .info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+
+      & > div {
+        flex: 0 0 48%;
+      }
+
+      .access-info {
+        text-align: left;
+        padding: 0 20px;
+
+        p {
+          margin-bottom: 6px;
+        }
+      }
+
+      .access-map {
+        height: 180px;
+      }
+    }
+
+  }
+
+  /* -- 料金表 -- */
+  .price-table {
+    max-width: 720px;
+    margin: 0 auto;
+
+    tr {
+      &:first-child {
+        border-top: 1px solid #ddd;
+      }
+      td {
+        text-align: right;
+        padding-left: 1.5em;
+
+        &:last-child {
+          text-align: left;
+        }
+
+        &.column-1 {
+          text-align: right;
+          width: 40%;
+          padding-right: 2em;
+          border-right: 1px solid #ddd;
+
+          &:last-child {
+            text-align: left;
+            padding-right: 0em;
+            border-right-width: 0px;
+            background: #FFF;
+          }
+        }
+
+      }
+    }
+  }
+
+  .subscribe-area {
+    background: #eee;
+    padding: 20px;
+    h3 {
+      text-align: center;
+    }
+    .subscribe-input {
+      .es_lablebox {
+        display: inline-block;
+        margin-right: 10px;
+      }
+
+      .es_textbox {
+        display: inline-block;
+        margin-right: 10px;
+        input[type="text"],input[type="email"]{
+          padding: 8px 2px;
+        }
+      }
+
+      .es_button {
+        display: inline-block;
+      }
+    }
+  }
+}
+
+/* --  ArSchoolの学び -- */
+.what-to-learn-page .section .step {
+  margin-bottom: 48px;
+}
+
+.what-to-learn-page .section .step-desc {
+  display: flex;
+}
+
+.what-to-learn-page .section .step-desc > div.img-wrapper {
+  display: block;
+  flex: 0 0 30%;
+}
+
+.what-to-learn-page .section .step-desc > div.img-wrapper img {
+  max-width: 100%;
+  border-radius: 2px;
+}
+
+.what-to-learn-page .section .step-desc > div.desc {
+  flex: 0 0 69%;
+  padding: 0 24px;
+}
+
+.what-to-learn-page .sub-title {
+  text-align: center;
+  margin-bottom: 24px;
+  color: #555;
+  font-size: 20px;
+}
+
+/* --  お問い合わせフォーム -- */
+span.wpcf7-not-valid-tip {
+  background: transparent;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  border: none;
+  padding: 3px 6px;
+}
+
+div.wpcf7-spam-blocked {
+  color: #ff0000;
+  background: transparent;
+  border: none;
+}
+
+div.wpcf7-mail-sent-ok {
+  color: #32ad25;
+  background: transparent;
+}
+
+div.wpcf7-validation-errors {
+  color: #ff0000;
+  background: transparent;
+}
+
+span.wpcf7-not-valid-tip {
+  color: #ff0000;
+  background: transparent;
+}
+
+div.wpcf7-mail-sent-ok, div.wpcf7-validation-errors, span.wpcf7-not-valid-tip {
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  border: none;
+  padding: 3px 6px;
+  font-size: 120%;
+}
+
+div.wpcf7-mail-sent-ng {
+  border: none;
+  color: #ff0000;
+}
+
+.wpcf7-form input[type="submit"] {
+  display: block;
+  margin: 1em auto 0;
+}
+
+div.wpcf7-response-output {
+  margin: 0;
+  text-align: center;
+}
+
+div.wpcf7 .ajax-loader {
+  display: block;
+  margin: 0 auto;
+}
+
+div.wpcf7-form-control.wpcf7-recaptcha > div {
+  margin: 0 auto;
+}
+
+.wpcf7-form textarea {
+  height: 15em;
+}
+
+/* --  お問い合わせボタン -- */
+a.inquiry-btn {
+  display: block;
+  box-sizing: border-box;
+  width: 50%;
+  max-width: 400px;
+  color: #FFFFFF;
+  font-size: 120%;
+  background: #990000;
+  /*    border: 1px solid #666; */
+  border-radius: 4px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 14px 0px;
+}
+
+a.inquiry-btn:hover {
+  opacity: 0.5;
+}
+
+a.inquiry-btn i {
+  font-size: 120%;
+  margin-right: 0.5em;
+  vertical-align: text-bottom;
+}
+
+/* 講師ページ */
+div.staff-page div.staff {
+  margin-bottom: 48px;
+  overflow: auto;
+}
+
+div.staff-page div.staff h2 {
+
+}
+
+div.staff-page div.staff .prof-img {
+  float: left;
+  width: 200px;
+}
+
+div.staff-page div.staff .prof-img img {
+  width: 100%;
+  border-radius: 100px;
+}
+
+div.staff-page div.staff .desc-wrapper {
+  float: left;
+  width: 100%;
+  margin-left: -200px;
+}
+
+div.staff-page div.staff .desc-wrapper .desc {
+  margin-left: 200px;
+  padding-top: 10px;
+  padding-left: 40px;
+}
+
+
+
+

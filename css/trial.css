@@ -185,6 +185,9 @@
       text-align: center; }
     .trial-page .top_image {
       width: 100%; }
+      .trial-page .top_image img {
+        width: 100% !important;
+        height: auto !important; }
     .trial-page .form {
       width: 90%;
       font-size: 100%;
