@@ -1,21 +1,58 @@
 @charset "UTF-8";
 /*------------ media query --------------- */
 @media only screen and (max-width: 768px) {
-  #slider .featured-title span {
-    font-size: 16px; }
-  #slider .featured {
-    /*vertical-align: top;*/
-    padding-top: 10px; }
+  #header {
+    padding-top: 5px;
+    padding-bottom: 0; }
+  #logo {
+    text-align: left; }
+  button#responsive-menu-button {
+    border-radius: 25px; }
+  #responsive-menu-container {
+    border-right: 1px solid #990000; }
+  /* --  ヘッダー -- */
+  #header-responsive select {
+    background: #990000;
+    border-color: #990000; }
+  /*お問い合わせボタン*/
+  a.inquiry-btn {
+    width: 100%; }
+  #slider {
+    height: 35.09vw; }
+    #slider .featured-title span {
+      font-size: 16px; }
+    #slider .featured {
+      /*vertical-align: top;*/
+      padding-top: 10px; }
+  /* -- TOPページ -- */
   .top-page {
+    /* -- お知らせエリア -- */
+    /* -- コース -- */
     /* --  アクセス -- */ }
+    .top-page .whats-new-area #npcatch {
+      flex-direction: column; }
+      .top-page .whats-new-area #npcatch li {
+        flex: 0 0 auto;
+        padding: 0 5px;
+        margin-bottom: 20px; }
+        .top-page .whats-new-area #npcatch li a.img-wrapper {
+          width: 80vw;
+          height: 44.52vw;
+          margin: 10px auto; }
+          .top-page .whats-new-area #npcatch li a.img-wrapper img {
+            max-width: 80vw;
+            max-height: 44.52vw; }
+        .top-page .whats-new-area #npcatch li .title {
+          width: 80vw;
+          margin: 0 auto; }
     .top-page .schools {
       flex-direction: column; }
-    .top-page .school {
-      flex: 0 0 100%;
-      margin: 0 0 40px; }
-      .top-page .school .school-info {
-        margin: 0;
-        padding: 32px 10px 0; }
+      .top-page .schools .school {
+        flex: 0 0 100%;
+        margin: 0 0 40px; }
+        .top-page .schools .school .school-info {
+          margin: 0;
+          padding: 32px 10px 0; }
     .top-page .access .access-info {
       width: 100%;
       display: block;
@@ -24,6 +61,7 @@
       width: 100%;
       height: 180px;
       display: block; }
+  /* -- TOPページここまで -- */
   /* -- 教室のページ -- */
   .school-page {
     /* -- スケジュール表 -- */
@@ -50,69 +88,71 @@
       .school-page .access .info .access-info {
         padding: 0;
         margin-bottom: 10px; }
-  /* --  ヘッダー -- */
-  #header-responsive select {
-    background: #990000;
-    border-color: #990000; }
-  /*お問い合わせボタン*/
-  a.inquiry-btn {
-    width: 100%; }
-  /*講師*/
-  div.staff-page div.staff .prof-img {
+  /* -- 教室のページここまで -- */
+  /* -- 教室のページ -- */
+  .course-page {
+    width: 100%;
+    /* -- スケジュール表 -- */
+    /* -- 料金表 -- */ }
+    .course-page .summary-section ul {
+      flex-direction: column; }
+      .course-page .summary-section ul li {
+        flex: 1 1 auto;
+        margin: 0 0 14px 0; }
+    .course-page .school .section .info {
+      padding: 0; }
+    .course-page .schedule-table tr td {
+      padding: 0.5em;
+      text-align: left; }
+      .course-page .schedule-table tr td.column-1 {
+        padding: 0.5em;
+        text-align: left; }
+    .course-page .price-table tr td {
+      padding: 0.5em;
+      text-align: left; }
+      .course-page .price-table tr td.column-1 {
+        padding: 0.5em;
+        text-align: left;
+        width: 50%; }
+    .course-page .access .info {
+      flex-direction: column; }
+      .course-page .access .info > div {
+        flex: 0 0 100%; }
+      .course-page .access .info .access-info {
+        padding: 0;
+        margin-bottom: 10px; }
+  /* -- 教室のページここまで -- */
+  /* -- 講師 -- */
+  .staff-page .staff .prof-img {
     float: none;
     width: 200px;
     margin: 0 auto; }
-  div.staff-page div.staff .prof-img img {
-    width: 100%;
-    border-radius: 100px; }
-  div.staff-page div.staff .desc-wrapper {
+    .staff-page .staff .prof-img img {
+      width: 100%;
+      border-radius: 100px; }
+  .staff-page .staff .desc-wrapper {
     float: none;
     width: 100%;
     margin-left: 0px; }
-  div.staff-page div.staff .desc-wrapper .desc {
-    margin-left: 0px;
-    padding-top: 0px;
-    padding-left: 0px; }
+    .staff-page .staff .desc-wrapper .desc {
+      margin-left: 0px;
+      padding-top: 0px;
+      padding-left: 0px; }
+  /* -- 講師ここまで -- */
   /* -- 学習内容のページ -- */
   .what-to-learn-page .section .step-desc {
     flex-direction: column; }
-  .what-to-learn-page .section .step-desc > div.img-wrapper {
-    flex: 0 0 100%; }
-  .what-to-learn-page .section .step-desc > div.img-wrapper img {
-    display: block;
-    max-width: 80%;
-    margin: 0 auto 10px; }
-  .top-page {
-    /* -- お知らせエリア -- */ }
-    .top-page .whats-new-area #npcatch {
-      flex-direction: column; }
-      .top-page .whats-new-area #npcatch li {
-        flex: 0 0 80vw;
-        padding: 0 5px; }
-        .top-page .whats-new-area #npcatch li a.img-wrapper {
-          width: 80vw;
-          height: 44.52vw;
-          margin: 10px auto; }
-      .top-page .whats-new-area #npcatch img {
-        max-width: 80vw;
-        max-height: 44.52vw; } }
+    .what-to-learn-page .section .step-desc > div.img-wrapper {
+      flex: 0 0 100%; }
+      .what-to-learn-page .section .step-desc > div.img-wrapper img {
+        display: block;
+        max-width: 80%;
+        margin: 0 auto 10px; }
+  /* -- 学習内容のページここまで -- */ }
 
 @media only screen and (min-width: 769px) {
   br.sp-only {
     display: none; }
   #slider {
     max-height: 400px;
-    height: 35.09vw; } }
-
-@media only screen and (max-width: 768px) {
-  #header {
-    padding-top: 5px;
-    padding-bottom: 0; }
-  #logo {
-    text-align: left; }
-  button#responsive-menu-button {
-    border-radius: 25px; }
-  #responsive-menu-container {
-    border-right: 1px solid #990000; }
-  #slider {
     height: 35.09vw; } }
