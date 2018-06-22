@@ -75,11 +75,43 @@ i.blank-icon {
 
 /* --  TOPページ(post) -- */
 .top-page {
+  /* -- イベントリストエリア -- */
   /* -- お知らせエリア -- */
   /* -- 学校ごとの説明エリア -- */ }
   .top-page > h2 {
     margin-bottom: 10px;
     text-align: center; }
+  .top-page .event-list-area ul.event-list {
+    margin: 0 0 20px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .top-page .event-list-area ul.event-list li {
+      flex: 0 0 240px;
+      padding: 0 5px; }
+      .top-page .event-list-area ul.event-list li a.img-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 230px;
+        height: 128px;
+        border: 1px solid #eee;
+        background: #fafafa;
+        margin-bottom: 10px; }
+    .top-page .event-list-area ul.event-list img {
+      align-self: center;
+      display: block;
+      /*margin: 0 auto;*/
+      max-width: 230px;
+      max-height: 128px;
+      /*line-height: 200px;*/ }
+    .top-page .event-list-area ul.event-list .title {
+      display: block;
+      line-height: 1.3; }
+    .top-page .event-list-area ul.event-list .date {
+      display: block;
+      font-size: 90%; }
   .top-page .whats-new-area #npcatch {
     margin: 0 0 20px;
     padding: 0;
@@ -241,7 +273,8 @@ i.blank-icon {
   /* -- 概要エリア -- */
   /* -- 学校ごとの説明エリア -- */
   /* --  アクセス -- */
-  /* -- 料金表 -- */ }
+  /* -- 料金表 -- */
+  /* -- イベントリストエリア -- */ }
   .course-page .summary-section ul {
     list-style-type: none;
     padding: 0;
@@ -381,6 +414,39 @@ i.blank-icon {
           margin-left: 10px; }
         .course-page .subscribe-area .subscribe-input .es_button {
           display: block; } }
+  .course-page .event-list-area h3 {
+    text-align: center; }
+  .course-page .event-list-area ul.event-list {
+    margin: 0 0 20px;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    .course-page .event-list-area ul.event-list li {
+      flex: 0 0 240px;
+      padding: 0 5px; }
+      .course-page .event-list-area ul.event-list li a.img-wrapper {
+        display: flex;
+        justify-content: center;
+        width: 230px;
+        height: 128px;
+        border: 1px solid #eee;
+        background: #fafafa;
+        margin-bottom: 10px; }
+    .course-page .event-list-area ul.event-list img {
+      align-self: center;
+      display: block;
+      /*margin: 0 auto;*/
+      max-width: 230px;
+      max-height: 128px;
+      /*line-height: 200px;*/ }
+    .course-page .event-list-area ul.event-list .title {
+      display: block;
+      line-height: 1.3; }
+    .course-page .event-list-area ul.event-list .date {
+      display: block;
+      font-size: 90%; }
 
 /* --  ArSchoolの学び -- */
 .what-to-learn-page .section .step {

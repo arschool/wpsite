@@ -38,6 +38,33 @@
 
   /* -- TOPページ -- */
   .top-page {
+    /* -- イベントリストエリア -- */
+    .event-list-area {
+      ul.event-list {
+        flex-direction: column;
+        li {
+          //flex: 0 0 80vw;
+          flex: 0 0 auto;
+          padding: 0 5px;
+          margin-bottom: 20px;
+          a.img-wrapper {
+            width: 80vw;
+            height: 44.52vw;
+            margin: 10px auto;
+            img {
+              max-width: 80vw;
+              max-height: 44.52vw;
+            }
+          }
+          .title {
+            width: 80vw;
+            margin: 0 auto;
+          }
+        }
+
+      }
+    }
+
     /* -- お知らせエリア -- */
     .whats-new-area {
       #npcatch {
@@ -211,6 +238,33 @@
         .access-info {
           padding: 0;
           margin-bottom: 10px;
+        }
+
+      }
+    }
+
+    /* -- イベントリストエリア -- */
+    .event-list-area {
+      ul.event-list {
+        flex-direction: column;
+        li {
+          //flex: 0 0 80vw;
+          flex: 0 0 auto;
+          padding: 0 5px;
+          margin-bottom: 20px;
+          a.img-wrapper {
+            width: 80vw;
+            height: 44.52vw;
+            margin: 10px auto;
+            img {
+              max-width: 80vw;
+              max-height: 44.52vw;
+            }
+          }
+          .title {
+            width: 80vw;
+            margin: 0 auto;
+          }
         }
 
       }

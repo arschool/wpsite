@@ -26,9 +26,26 @@
       padding-top: 10px; }
   /* -- TOPページ -- */
   .top-page {
+    /* -- イベントリストエリア -- */
     /* -- お知らせエリア -- */
     /* -- コース -- */
     /* --  アクセス -- */ }
+    .top-page .event-list-area ul.event-list {
+      flex-direction: column; }
+      .top-page .event-list-area ul.event-list li {
+        flex: 0 0 auto;
+        padding: 0 5px;
+        margin-bottom: 20px; }
+        .top-page .event-list-area ul.event-list li a.img-wrapper {
+          width: 80vw;
+          height: 44.52vw;
+          margin: 10px auto; }
+          .top-page .event-list-area ul.event-list li a.img-wrapper img {
+            max-width: 80vw;
+            max-height: 44.52vw; }
+        .top-page .event-list-area ul.event-list li .title {
+          width: 80vw;
+          margin: 0 auto; }
     .top-page .whats-new-area #npcatch {
       flex-direction: column; }
       .top-page .whats-new-area #npcatch li {
@@ -93,7 +110,8 @@
   .course-page {
     width: 100%;
     /* -- スケジュール表 -- */
-    /* -- 料金表 -- */ }
+    /* -- 料金表 -- */
+    /* -- イベントリストエリア -- */ }
     .course-page .summary-section ul {
       flex-direction: column; }
       .course-page .summary-section ul li {
@@ -121,6 +139,22 @@
       .course-page .access .info .access-info {
         padding: 0;
         margin-bottom: 10px; }
+    .course-page .event-list-area ul.event-list {
+      flex-direction: column; }
+      .course-page .event-list-area ul.event-list li {
+        flex: 0 0 auto;
+        padding: 0 5px;
+        margin-bottom: 20px; }
+        .course-page .event-list-area ul.event-list li a.img-wrapper {
+          width: 80vw;
+          height: 44.52vw;
+          margin: 10px auto; }
+          .course-page .event-list-area ul.event-list li a.img-wrapper img {
+            max-width: 80vw;
+            max-height: 44.52vw; }
+        .course-page .event-list-area ul.event-list li .title {
+          width: 80vw;
+          margin: 0 auto; }
   /* -- 教室のページここまで -- */
   /* -- 講師 -- */
   .staff-page .staff .prof-img {
