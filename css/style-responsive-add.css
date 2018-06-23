@@ -182,7 +182,26 @@
         display: block;
         max-width: 80%;
         margin: 0 auto 10px; }
-  /* -- 学習内容のページここまで -- */ }
+  /* -- 学習内容のページここまで -- */
+  /* -- サマースクールページ -- */
+  .summer-lp-page .title_top h1 {
+    line-height: 1.2; }
+  .summer-lp-page .courses .course .description {
+    flex-direction: column; }
+    .summer-lp-page .courses .course .description .img-wrapper {
+      flex: 0 0 auto;
+      margin-bottom: 16px; }
+    .summer-lp-page .courses .course .description .detail {
+      padding: 0; }
+  .summer-lp-page .contact {
+    text-align: center; }
+    .summer-lp-page .contact .mail {
+      width: 90%;
+      font-size: 100%;
+      font-weight: bold;
+      margin: 20px auto;
+      padding: 14px 0px; }
+  /* -- サマースクールページここまで -- */ }
 
 @media only screen and (min-width: 769px) {
   br.sp-only {
